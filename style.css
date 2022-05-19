@@ -13,24 +13,64 @@ header, main{
     background-color: #fffaf0;
 }
 
+/* IMAGES */
 .icons{
     height: 50px;
     width: 50px;
 }
+
+.des{
+    height: 30%;
+    width: 30%;
+    margin:auto;
+}
+
+/* POSITIONNEMENT */
 
 .newGamePart{
     display :flex;
     justify-content: center;
 }
 
+main{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .playerPart{
     display:flex;
     justify-content: space-around;
+    margin: 30px;
 }
 
 .iconPart{
     display:flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+  
+/* REGLAGES BOUTON */
+
+.newGame {
+    margin: 10px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+/* FONT */
+.score1, .score2, .scoreCurrent1, .scoreCurrent2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.currentLeft, .currentRight {
+    font-size: 30px;
+    text-align: center;
 }
 
