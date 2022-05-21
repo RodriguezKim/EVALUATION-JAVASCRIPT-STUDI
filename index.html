@@ -11,38 +11,30 @@
     <title>À toi de jouer !</title>
 </head>
 <body>
-    <header>
-            <div class = "newGamePart">
-                <img src ="ICONES/newGame.png" class = 'icons'>
-                <button class ="newGame" type = "button">NEW GAME</button>
-            </div>
-    </header>
-    <main>
-        <div class = "playerPart">
+        <div class = "wrapper">
             <div class = "leftSide">
-                <h2>PLAYER 1</h2>
-                <p class = "score1">0</p>
+                <div class="playerName" id="name-0">PLAYER 1</div>
+                <div class = "score1" id="score-0">0</div>
                 <div class = "currentLeft">
-                    <p>CURRENT</p>
-                    <p class = "scoreCurrent1">0</p>
+                    <div class = "playerCurrentLabel">CURRENT</div>
+                    <div class = "scoreCurrent1" id="current-0">0</div>
                 </div>
             </div>
-            <img src ="IMAGES_DES/de1.svg" class="des">
             <div class = "rightSide">
-                <h2>PLAYER 2</h2>  
-                <p class = "score2">0</p>
+                <div class="playerName" id="name-0">PLAYER 2</div>  
+                <div class = "score2" id="score-1">0</div>
                 <div class = "currentRight">
-                    <p>CURRENT</p>
-                    <p class = "scoreCurrent2">0</p>
+                    <div class = "playerCurrentLabel">CURRENT</div>
+                    <div class = "scoreCurrent2" id="current-1">0</div>
                 </div>
             </div>
-        </div>
-            <div class = "iconPart">
+                <button class ="newGame" type = "button"><img src ="ICONES/newGame.png" class = 'icons'>NEW GAME</button>
                 <button class = "rollDice" type = "button"><img src ="icones/rollDice.png" class = 'icons'>ROLL DICE</button>
                 <button class = "hold" type = "button"><img src ="ICONES/hold.png" class = 'icons'>HOLD</button>
-            </div>
-    </main>
-<!--MANQUE LIEN VERS PAGE JS-->    
+
+            <img src="IMAGES_DES/de5.svg" alt="Dice" class="dice">
+        </div> 
+    <script src="main.js"></script>
 </body>
 </html>
 

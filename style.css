@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 body{
-    height: 100vh;
+    min-height: 100vh;
+    font-weight: 300;
+    position: relative;
     font-family: 'Poppins', sans-serif;
     background: #f3e2c7; /* Old browsers */
     background: -moz-linear-gradient(top,  #f3e2c7 0%, #b68d4c 38%, #b68d4c 38%, #c19e67 50%, #e9d4b3 100%); /* FF3.6-15 */
@@ -9,68 +18,175 @@ body{
     
 }
 
-header, main{
-    background-color: #fffaf0;
+
+.wrapper{
+    display:flex;
+    justify-content: space-around;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
-/* IMAGES */
-.icons{
-    height: 50px;
-    width: 50px;
-}
-
-.des{
-    height: 30%;
-    width: 30%;
-    margin:auto;
-}
-
-/* POSITIONNEMENT */
-
-.newGamePart{
-    display :flex;
-    justify-content: center;
-}
-
-main{
-    height: 90%;
+.leftSide, .rightSide{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
 }
 
-.playerPart{
-    display:flex;
-    justify-content: space-around;
-    margin: 30px;
+/* PLAYERS */
+
+.playerName {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
 }
+
+.score1, .score2 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+}
+
+.active { background-color: #f7f7f7; }
+.active .playerName { font-weight: 300; }
+
+.active .playerName::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+    
+}
+
+.currentLeft, .currentRight {
+    font-size: 15px;
+    text-align: center;
+    background-color:  #da7171;
+    padding-bottom: 0.1rem;
+    padding: 12px;
+    margin:0 auto;
+    width: 40%;
+}
+
+.playerCurrentLabel {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.scoreCurrent1, .scoreCurrent2 {
+    font-size: 30px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+.newGame { top: 45px;}
+.rollDice { top: 403px;}
+.hold { top: 467px;}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    /*box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);*/
+}
+
+.winner { background-color: #f7f7f7; }
+.winner .playerName { font-weight: 300; color: #EB4D4D; }
+
+
+.icons{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+
+/* POSITIONNEMENT 
+
+
+/*main{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
 
 .iconPart{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 2px;
+    /*background-color: #fffaf0;
 
 }
 
-  
-/* REGLAGES BOUTON */
+
 
 .newGame {
     margin: 10px;
 }
 
-h2 {
-    font-size: 55px;
+
+/* ton ancienne version de bouton : button{
+    border: none;
+    background-color: #fffaf0;
+    font-size: 28px;
+    cursor: pointer;
 }
 
-/* FONT */
+button:hover{
+    background-color: #f4d1a4;
+}*/
+
+
+/* FONT 
 .score1, .score2, .scoreCurrent1, .scoreCurrent2 {
     font-size: 50px;
     text-align: center;
-}
-
-.currentLeft, .currentRight {
-    font-size: 30px;
-    text-align: center;
-}
+} */
 
