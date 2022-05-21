@@ -119,9 +119,15 @@ button:focus {
     outline: none;
 }
 
-.newGame { top: 45px;}
-.rollDice { top: 403px;}
-.hold { top: 467px;}
+.btn-new { 
+    top: 45px;
+}
+.btn-roll {
+    top: 403px;
+}
+.btn-hold { 
+    top: 467px;
+}
 
 .dice {
     position: absolute;
@@ -129,7 +135,6 @@ button:focus {
     top: 178px;
     transform: translateX(-50%);
     height: 100px;
-    /*box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);*/
 }
 
 .winner { background-color: #f7f7f7; }
@@ -142,51 +147,4 @@ button:focus {
     vertical-align: middle;
 }
 
-
-/* POSITIONNEMENT 
-
-
-/*main{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-
-
-.iconPart{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2px;
-    /*background-color: #fffaf0;
-
-}
-
-
-
-.newGame {
-    margin: 10px;
-}
-
-
-/* ton ancienne version de bouton : button{
-    border: none;
-    background-color: #fffaf0;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color: #f4d1a4;
-}*/
-
-
-/* FONT 
-.score1, .score2, .scoreCurrent1, .scoreCurrent2 {
-    font-size: 50px;
-    text-align: center;
-} */
 
